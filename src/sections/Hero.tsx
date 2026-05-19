@@ -1,5 +1,5 @@
 import Button from '../components/Button';
-import { ArrowRight, ChevronDown } from 'lucide-react';
+import { ArrowRight, ChevronDown, Download } from 'lucide-react';
 import AnimatedBorderButton from '@/components/AnimatedBorderButton';
 import { FaGithub, FaLinkedin, FaXTwitter } from 'react-icons/fa6';
 
@@ -37,8 +37,9 @@ export default function Hero() {
       </div>
       {/* Green Dots */}
       <div className='absolute inset-0 overflow-hidden pointer-events-none'>
-        {[...Array(30)].map((_) => (
+        {[...Array(30)].map((_, i) => (
           <div
+            key={i}
             className='absolute w-1.5 h-1.5 rounded-full opacity-60'
             style={{
               backgroundColor: '#20B2A6',
@@ -83,7 +84,10 @@ export default function Hero() {
               <Button size='lg'>
                 Contact Me <ArrowRight className='w-5 h-5' />
               </Button>
-              <AnimatedBorderButton />
+              <AnimatedBorderButton>
+                <Download className='W-5 h-5' />
+                Download CV
+              </AnimatedBorderButton>
             </div>
             {/* Social Links */}
             <div className='flex items-center gap-4 animate-fade-in animation-delay-400'>
