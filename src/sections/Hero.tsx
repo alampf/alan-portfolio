@@ -72,7 +72,7 @@ export default function Hero() {
                   presicion.
                 </span>
               </h1>
-              <p className='text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-800'>
+              <p className='text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200'>
                 Hi, I'm Alan Patlani - a Full Stack Engineer with knowledge in
                 Angular, TypeScript, Vue, Django, PostgreSQL. I build scalable,
                 performant web applications that users love.
