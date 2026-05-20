@@ -8,19 +8,19 @@ const contactInfo = [
   {
     icon: FaEnvelope,
     label: 'Email',
-    value: 'example@example.com',
-    href: 'mailto:example@example.com',
+    value: 'alanpatlani65@gmail.com',
+    href: 'mailto:alanpatlani65@gmail.com',
   },
   {
     icon: FaPhone,
     label: 'Phone',
-    value: '+1 (555) 123-4567',
-    href: 'tel:+15551234567',
+    value: '+52 (247) 106-2398',
+    href: 'tel:+522471062398',
   },
   {
     icon: FaMapPin,
     label: 'Location',
-    value: 'Ixtenco, Tlax, MX',
+    value: 'Ixtenco Tlax, MX',
     href: '#',
   },
 ];
