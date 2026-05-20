@@ -2,12 +2,14 @@ import AnimatedBorderButton from '@/components/AnimatedBorderButton';
 import { ArrowUpRight } from 'lucide-react';
 import { FaGithub } from 'react-icons/fa6';
 
+const baseUrl = import.meta.env.BASE_URL;
+
 const projects = [
   {
     title: 'Fintech Dashboard',
     description:
       'A comprehensive financial analytics platform with real-time data visualization, portfolio management, and AI-powered insights.',
-    image: '/public/projects/project1.png',
+    image: `${baseUrl}projects/project1.png`,
     tags: ['React', 'Typescript', 'NodeJS'],
     link: '#',
     github: '#',
@@ -16,7 +18,7 @@ const projects = [
     title: 'E-Commerce Platform',
     description:
       'A full-featured e-commerce solution with inventory management, payment processing, and analytics dashboard.',
-    image: '/public/projects/project2.png',
+    image: `${baseUrl}projects/project2.png`,
     tags: ['Next.js', 'Stripe', 'PostgreSQL', 'Tailwind'],
     link: '#',
     github: '#',
@@ -25,7 +27,7 @@ const projects = [
     title: 'AI Writing Assistant',
     description:
       'An intelligent writing tool powered by GPT-4, helping users create better content faster.',
-    image: '/public/projects/project3.png',
+    image: `${baseUrl}projects/project3.png`,
     tags: ['React', 'OpenAI', 'Python', 'FastAPI'],
     link: '#',
     github: '#',
@@ -34,7 +36,7 @@ const projects = [
     title: 'Project Management Tool',
     description:
       'A collaborative workspace for teams with real-time updates, task tracking, and integrations.',
-    image: '/public/projects/project4.png',
+    image: `${baseUrl}projects/project4.png`,
     tags: ['Next.js', 'Socket.io', 'MongoDB', 'Redis'],
     link: '#',
     github: '#',

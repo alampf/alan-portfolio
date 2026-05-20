@@ -29,7 +29,7 @@ export default function Hero() {
       {/* Bg */}
       <div className='absolute inset-0'>
         <img
-          src='/public/hero-bg.jpg'
+          src={`${import.meta.env.BASE_URL}hero-bg.jpg`}
           alt='Hero image'
           className='w-full h-full object-cover opacity-40'
         />
@@ -117,7 +117,7 @@ export default function Hero() {
               />
               <div className='relative glass rounded-3xl p-2 glow-border'>
                 <img
-                  src='/public/profile-image.png'
+                  src={`${import.meta.env.BASE_URL}profile-image.png`}
                   alt='Alan Patlani'
                   className='w-full aspect-4/5 object-cover rounded-2xl'
                 />
