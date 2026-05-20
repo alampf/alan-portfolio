@@ -11,5 +11,5 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
-  base: '/alampf.github.io'
+  base: '/alan-portfolio'
 });
