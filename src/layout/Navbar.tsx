@@ -34,7 +34,7 @@ export default function Navbar() {
           href='#'
           className='text-xl font-bold tracking-tight hover:text-primary'
         >
-          PM<span className='text-primary'>.</span>
+          AP<span className='text-primary'>.</span>
         </a>
         {/* Desktop Nav */}
         <div className='hidden md:flex items-center gap-1'>
@@ -54,7 +54,9 @@ export default function Navbar() {
         </div>
         {/* CTA Button */}
         <div className='hidden md:block '>
-          <Button size='sm'>Contact Me</Button>
+          <a href='#contact'>
+            <Button size='sm'>Contact Me</Button>
+          </a>
         </div>
         {/* Mobile Menu Button */}
         <button
@@ -81,7 +83,9 @@ export default function Navbar() {
               );
             })}
             <div onClick={() => setIsMobileMenuOpen(false)}>
-              <Button>Contact Me</Button>
+              <a href='#contact'>
+                <Button>Contact Me</Button>
+              </a>
             </div>
           </div>
         </div>

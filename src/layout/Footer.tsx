@@ -1,9 +1,13 @@
 import { FaGithub, FaLinkedin, FaXTwitter } from 'react-icons/fa6';
 
 const socialLinks = [
-  { icon: FaGithub, href: '', label: 'Github' },
-  { icon: FaLinkedin, href: '', label: 'Linkedin' },
-  { icon: FaXTwitter, href: '', label: 'X' },
+  { icon: FaGithub, href: 'https://github.com/alampf', label: 'Github' },
+  {
+    icon: FaLinkedin,
+    href: 'https://www.linkedin.com/in/alanpatlaniflores',
+    label: 'Linkedin',
+  },
+  { icon: FaXTwitter, href: 'https://x.com/AlanPatlani', label: 'X' },
 ];
 
 const footerLinks = [
@@ -22,7 +26,7 @@ export default function Footer() {
           {/* Logo & Copyright */}
           <div className='text-center md:text-left'>
             <a href='#' className='text-xl font-bold tracking-tight'>
-              PM<span className='text-primary'>.</span>
+              AP<span className='text-primary'>.</span>
             </a>
             <p className='text-sm text-muted-foreground mt-2'>
               © {currentYear} Alan Patlani. All rights reserved.
@@ -49,6 +53,7 @@ export default function Footer() {
                 key={social.label}
                 href={social.href}
                 aria-label={social.label}
+                target='_blank'
                 className='p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all'
               >
                 <social.icon className='w-5 h-5' />

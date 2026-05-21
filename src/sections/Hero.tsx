@@ -81,9 +81,11 @@ export default function Hero() {
             </div>
             {/* CTAs */}
             <div className='flex flex-wrap gap-4 animate-fade-in animation-delay-300'>
-              <Button size='lg'>
-                Contact Me <ArrowRight className='w-5 h-5' />
-              </Button>
+              <a href='#contact'>
+                <Button size='lg'>
+                  Contact Me <ArrowRight className='w-5 h-5' />
+                </Button>
+              </a>
               <AnimatedBorderButton>
                 <Download className='W-5 h-5' />
                 Download CV
@@ -93,13 +95,14 @@ export default function Hero() {
             <div className='flex items-center gap-4 animate-fade-in animation-delay-400'>
               <span className='text-sm text-muted-foreground'>Follow: </span>
               {[
-                { icon: FaGithub, href: '#' },
-                { icon: FaLinkedin, href: '#' },
-                { icon: FaXTwitter, href: '#' },
+                { icon: FaGithub, href: 'https://github.com/alampf' },
+                { icon: FaLinkedin, href: 'https://www.linkedin.com/in/alan-patlani-flores-346842317' },
+                { icon: FaXTwitter, href: 'https://x.com/AlanPatlani' },
               ].map((social, idx) => (
                 <a
                   key={idx}
                   href={social.href}
+                  target='_blank'
                   className='p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300'
                 >
                   {<social.icon className='w-5 h-5' />}
