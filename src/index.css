@@ -26,6 +26,7 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    scrollbar-color: #26C4B8 #0F1418;
   }
 
   button {

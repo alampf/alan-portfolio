@@ -1,7 +1,7 @@
 import Button from '../components/Button';
 import { ArrowRight, ChevronDown, Download } from 'lucide-react';
 import AnimatedBorderButton from '@/components/AnimatedBorderButton';
-import { FaGithub, FaLinkedin, FaXTwitter } from 'react-icons/fa6';
+import { FaEye, FaGithub, FaLinkedin, FaXTwitter } from 'react-icons/fa6';
 
 export default function Hero() {
   const skills = [
@@ -59,7 +59,7 @@ export default function Hero() {
             <div className='animate-fade-in'>
               <span className='inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary'>
                 <span className='w-2 h-2 bg-primary rounded-full animate-pulse' />
-                Software Engineer • Full Stack Developer
+                Ingeniero de Software • Recién Egresado
               </span>
             </div>
             {/* Headline */}
@@ -70,7 +70,7 @@ export default function Hero() {
                 experiences with
                 <br />
                 <span className='font-serif italic font-normal text-white'>
-                  presicion.
+                  precision.
                 </span>
               </h1>
               <p className='text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200'>
@@ -86,17 +86,35 @@ export default function Hero() {
                   Contact Me <ArrowRight className='w-5 h-5' />
                 </Button>
               </a>
-              <AnimatedBorderButton>
-                <Download className='W-5 h-5' />
-                Download CV
-              </AnimatedBorderButton>
+              <a
+                href={`${import.meta.env.BASE_URL}cv/curriculum.txt`}
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <AnimatedBorderButton>
+                  <FaEye className='W-5 h-5' />
+                  View CV
+                </AnimatedBorderButton>
+              </a>
+              <a
+                href={`${import.meta.env.BASE_URL}cv/curriculum.txt`}
+                download={'curriculum.txt'}
+              >
+                <AnimatedBorderButton>
+                  <Download className='W-5 h-5' />
+                  Download CV
+                </AnimatedBorderButton>
+              </a>
             </div>
             {/* Social Links */}
             <div className='flex items-center gap-4 animate-fade-in animation-delay-400'>
               <span className='text-sm text-muted-foreground'>Follow: </span>
               {[
                 { icon: FaGithub, href: 'https://github.com/alampf' },
-                { icon: FaLinkedin, href: 'https://www.linkedin.com/in/alan-patlani-flores-346842317' },
+                {
+                  icon: FaLinkedin,
+                  href: 'https://www.linkedin.com/in/alan-patlani-flores-346842317',
+                },
                 { icon: FaXTwitter, href: 'https://x.com/AlanPatlani' },
               ].map((social, idx) => (
                 <a

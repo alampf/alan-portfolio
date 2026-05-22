@@ -12,7 +12,7 @@ const projects = [
     image: `${baseUrl}projects/project1.webp`,
     tags: ['React', 'Typescript', 'NodeJS'],
     link: '#',
-    github: '#',
+    github: 'https://github.com/alampf/Frontend-SIIUT',
   },
   {
     title: 'E-Commerce Platform',
@@ -92,6 +92,7 @@ export default function Projects() {
                     <ArrowUpRight className='w-5 h-5' />
                   </a>
                   <a
+                    target='_blank'
                     href={project.github}
                     className='p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all'
                   >
