@@ -42,7 +42,7 @@ export default function Hero() {
             key={i}
             className='absolute w-1.5 h-1.5 rounded-full opacity-60'
             style={{
-              backgroundColor: '#20B2A6',
+              backgroundColor: '#2062B2',
               left: `${Math.random() * 100}%`,
               top: `${Math.random() * 100}%`,
               animation: `slow-drift ${15 + Math.random() * 20}s ease-in-out infinite`,
@@ -128,7 +128,7 @@ export default function Hero() {
               ))}
             </div>
           </div>
-          {/* Right Column - Profile COntent */}
+          {/* Right Column - Profile Content */}
           <div className='relative animate-fade-in animation-delay-300'>
             {/* Profile Image */}
             <div className='relative max-w-md mx-auto'>
@@ -141,7 +141,7 @@ export default function Hero() {
                   loading='lazy'
                   src={`${import.meta.env.BASE_URL}profile-image.webp`}
                   alt='Alan Patlani'
-                  className='w-full aspect-4/5 object-cover rounded-2xl'
+                  className='w-full aspect-4/5 object-cover rounded-2xl pointer-events-none'
                 />
                 {/* Floating Badge */}
                 <div className='absolute -bottom-4 -right-4 glass rounded-xl px-4 py-3 animate-float'>
