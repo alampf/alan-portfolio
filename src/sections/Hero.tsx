@@ -87,7 +87,7 @@ export default function Hero() {
                 </Button>
               </a>
               <a
-                href={`${import.meta.env.BASE_URL}cv/curriculum.txt`}
+                href={`${import.meta.env.BASE_URL}cv/CV_PatlaniFloresAlan.pdf`}
                 target='_blank'
                 rel='noopener noreferrer'
               >
@@ -97,8 +97,8 @@ export default function Hero() {
                 </AnimatedBorderButton>
               </a>
               <a
-                href={`${import.meta.env.BASE_URL}cv/curriculum.txt`}
-                download={'curriculum.txt'}
+                href={`${import.meta.env.BASE_URL}cv/CV_PatlaniFloresAlan.pdf`}
+                download={'CV_PatlaniFloresAlan.pdf'}
               >
                 <AnimatedBorderButton>
                   <Download className='W-5 h-5' />
