@@ -7,19 +7,19 @@ import emailjs from '@emailjs/browser';
 const contactInfo = [
   {
     icon: FaEnvelope,
-    label: 'Email',
+    label: 'Correo',
     value: 'alanpatlani65@gmail.com',
     href: 'mailto:alanpatlani65@gmail.com',
   },
   {
     icon: FaPhone,
-    label: 'Phone',
+    label: 'Teléfono',
     value: '+52 (247) 106-2398',
     href: 'tel:+522471062398',
   },
   {
     icon: FaMapPin,
-    label: 'Location',
+    label: 'Ubicación',
     value: 'Ixtenco Tlax, MX',
     href: '#',
   },
@@ -52,7 +52,7 @@ export default function Contact() {
 
       if (!serviceId || !templateId || !publicKey) {
         throw new Error(
-          'EmailJS configuration is missing. Please check your environment variables.',
+          'Falta la configuración de EmailJS. Revisa tus variables de entorno.',
         );
       }
       await emailjs.send(
@@ -67,7 +67,7 @@ export default function Contact() {
       );
       setSubmitStatus({
         type: 'success',
-        message: "Message sent successfully! I'll get back to you soon.",
+        message: '¡Mensaje enviado con éxito! Te responderé en breve.',
       });
       setFormData({ name: '', email: '', message: '' });
     } catch (err) {
@@ -76,7 +76,7 @@ export default function Contact() {
         type: 'error',
         message:
           (err as any).text ||
-          'Failed to send message. Please try again later.',
+          'No se pudo enviar el mensaje. Inténtalo de nuevo más tarde.',
       });
     } finally {
       setIsLoading(false);
@@ -93,17 +93,17 @@ export default function Contact() {
         {/* Section Header */}
         <div className='text-center max-w-3xl mx-auto mb-10'>
           <span className='text-secondary-foreground text-sm font-medium tracking-wider uppercase animate-fade-in'>
-            Get in touch
+            Ponte en contacto
           </span>
           <h2 className='text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100 text-secondary-foreground'>
-            Let's build{' '}
+            Construyamos{' '}
             <span className='font-serif italic font-normal text-white'>
-              something great.
+              algo genial.
             </span>
           </h2>
           <p className='text-muted-foreground animate-fade-in animation-delay-200'>
-            Have a project in mind? I'd love to hear about it. Send me a message
-            and let's discuss how we can work together.
+            ¿Tienes un proyecto en mente? Me encantaría saber más. Envíame un
+            mensaje y hablemos de cómo podemos trabajar juntos.
           </p>
         </div>
         <div className='grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto'>
@@ -114,13 +114,13 @@ export default function Contact() {
                   htmlFor='name'
                   className='block text-sm font-medium mb-2'
                 >
-                  Name
+                  Nombre
                 </label>
                 <input
                   id='name'
                   type='text'
                   required
-                  placeholder='Your name...'
+                  placeholder='Tu nombre...'
                   value={formData.name}
                   onChange={(e) => {
                     setFormData({ ...formData, name: e.target.value });
@@ -133,7 +133,7 @@ export default function Contact() {
                   htmlFor='email'
                   className='block text-sm font-medium mb-2'
                 >
-                  Email
+                  Correo electrónico
                 </label>
                 <input
                   id='email'
@@ -152,7 +152,7 @@ export default function Contact() {
                   htmlFor='message'
                   className='block text-sm font-medium mb-2'
                 >
-                  Message
+                  Mensaje
                 </label>
                 <textarea
                   rows={5}
@@ -161,7 +161,7 @@ export default function Contact() {
                   onChange={(e) => {
                     setFormData({ ...formData, message: e.target.value });
                   }}
-                  placeholder='Your message...'
+                  placeholder='Tu mensaje...'
                   className='w-full px-4 py-3 bg-surface rounded-xl border-border focus:border-primary focus:right-1 focus:ring-primary outline-none transition-all resize-none'
                 />
               </div>
@@ -172,10 +172,10 @@ export default function Contact() {
                 disabled={isLoading}
               >
                 {isLoading ? (
-                  <>Sending...</>
+                  <>Enviando...</>
                 ) : (
                   <>
-                    Send Message
+                    Enviar mensaje
                     <Send className='w-5 h-5' />
                   </>
                 )}
@@ -198,7 +198,7 @@ export default function Contact() {
           <div className='space-y-6 animate-fade-in animation-delay-400'>
             <div className='glass rounded-3xl p-8'>
               <h3 className='text-xl font-semibold mb-6'>
-                Contact Information
+                Información de contacto
               </h3>
               <div className='space-y-4'>
                 {contactInfo.map((item, i) => (
@@ -224,12 +224,12 @@ export default function Contact() {
             <div className='glass rounded-3xl p-8 border border-primary/30'>
               <div className='flex items-center gap-3 mb-4'>
                 <span className='w-3 h-3 bg-green-500 rounded-full animate-pulse' />
-                <span className='font-medium'>Currently Available</span>
+                <span className='font-medium'>Disponible actualmente</span>
               </div>
               <p className='text-muted-foreground text-sm'>
-                I'm currently open to new opportunities and exciting projects.
-                Whether you need a full-time engineer or a freelance consultant,
-                let's talk!
+                Actualmente estoy abierto a nuevas oportunidades y proyectos
+                emocionantes. Ya sea que necesites un ingeniero de tiempo
+                completo o un consultor freelance, ¡hablemos!
               </p>
             </div>
           </div>

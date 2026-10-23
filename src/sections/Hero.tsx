@@ -20,6 +20,7 @@ export default function Hero() {
     'Django',
     'Flask',
     'Git',
+    'GitHub',
     'Figma',
     'TailwindCSS',
   ];
@@ -30,7 +31,7 @@ export default function Hero() {
       <div className='absolute inset-0'>
         <img
           src={`${import.meta.env.BASE_URL}hero-bg.webp`}
-          alt='Hero image'
+          alt='Imagen de portada'
           className='w-full h-full object-cover opacity-40'
         />
         <div className='absolute inset-0 bg-linear-to-b from-background/20 via-background/80 to-background' />
@@ -59,31 +60,35 @@ export default function Hero() {
             <div className='animate-fade-in'>
               <span className='inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary'>
                 <span className='w-2 h-2 bg-primary rounded-full animate-pulse' />
-                Ingeniero de Software • Recién Egresado
+                Ingeniero en Desarrollo y Gestión de Software • Estudiante
               </span>
             </div>
             {/* Headline */}
             <div className='space-y-4'>
               <h1 className='text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in animation-delay-100'>
-                Crafting <span className='text-primary glow-text'>digital</span>
+                Construyendo{' '}
+                <span className='text-primary glow-text'>soluciones</span>
                 <br />
-                experiences with
+                digitales con
                 <br />
                 <span className='font-serif italic font-normal text-white'>
-                  precision.
+                  precisión y rendimiento.
                 </span>
               </h1>
               <p className='text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200'>
-                Hi, I'm Alan Patlani - a Full Stack Engineer with knowledge in
-                Angular, TypeScript, Vue, Django, PostgreSQL. I build scalable,
-                performant web applications that users love.
+                Hola, soy Alan Patlani Flores, Técnico Superior Universitario en
+                Desarrollo de Software Multiplataforma. Me especializo en el
+                desarrollo y construcción de aplicaciones web escalables,
+                eficientes y centradas en el usuario, utilizando tecnologías
+                como Angular, TypeScript, Django, PostgreSQL, Flask, React y
+                JavaScript.
               </p>
             </div>
             {/* CTAs */}
             <div className='flex flex-wrap gap-4 animate-fade-in animation-delay-300'>
               <a href='#contact'>
                 <Button size='lg'>
-                  Contact Me <ArrowRight className='w-5 h-5' />
+                  Contáctame <ArrowRight className='w-5 h-5' />
                 </Button>
               </a>
               <a
@@ -93,7 +98,7 @@ export default function Hero() {
               >
                 <AnimatedBorderButton>
                   <FaEye className='W-5 h-5' />
-                  View CV
+                  Ver CV
                 </AnimatedBorderButton>
               </a>
               <a
@@ -102,13 +107,13 @@ export default function Hero() {
               >
                 <AnimatedBorderButton>
                   <Download className='W-5 h-5' />
-                  Download CV
+                  Descargar CV
                 </AnimatedBorderButton>
               </a>
             </div>
             {/* Social Links */}
             <div className='flex items-center gap-4 animate-fade-in animation-delay-400'>
-              <span className='text-sm text-muted-foreground'>Follow: </span>
+              <span className='text-sm text-muted-foreground'>Sígueme: </span>
               {[
                 { icon: FaGithub, href: 'https://github.com/alampf' },
                 {
@@ -148,14 +153,16 @@ export default function Hero() {
                   <div className='flex items-center gap-3'>
                     <div className='w-3 h-3 bg-green-500 rounded-full animate-pulse' />
                     <span className='text-sm font-medium'>
-                      Available for Work
+                      Disponible para trabajar
                     </span>
                   </div>
                 </div>
                 {/* Stats Badge */}
                 <div className='absolute -top-4 -left-4 glass rounded-xl px-4 py-3 animate-float animation-delay-500'>
                   <div className='text-2xl font-bold text-primary'>1</div>
-                  <div className='text-xs text-muted-foreground'>Year Exp.</div>
+                  <div className='text-xs text-muted-foreground'>
+                    Año de exp.
+                  </div>
                 </div>
               </div>
             </div>
@@ -164,7 +171,7 @@ export default function Hero() {
         {/* Skills Section */}
         <div className='mt-20 animate-fade-in animate-delay-600'>
           <p className='text-sm text-muted-foreground mb-6 text-center'>
-            Technologies, I work with
+            Tecnologías con las que trabajo
           </p>
           <div className='relative overflow-hidden'>
             <div className='flex animate-marquee'>

@@ -6,38 +6,45 @@ const baseUrl = import.meta.env.BASE_URL;
 
 const projects = [
   {
-    title: 'Fintech Dashboard',
+    title: 'SIIUTTLAX',
     description:
-      'A comprehensive financial analytics platform with real-time data visualization, portfolio management, and AI-powered insights.',
-    image: `${baseUrl}projects/project1.webp`,
-    tags: ['React', 'Typescript', 'NodeJS'],
+      'Plataforma web integral desarrollada para la Universidad Tecnológica de Tlaxcala, orientada a optimizar la gestión administrativa, docente y de la comunidad estudiantil mediante la centralización de procesos y servicios institucionales.',
+    image: `${baseUrl}projects/siiuttlax.webp`,
+    tags: [
+      'Angular',
+      'TypeScript',
+      'Tailwind CSS',
+      'Django',
+      'REST API',
+      'PostgreSQL',
+    ],
     link: '#',
     github: 'https://github.com/alampf/Frontend-SIIUT',
   },
   {
-    title: 'E-Commerce Platform',
+    title: 'Sistema Punto de Venta',
     description:
-      'A full-featured e-commerce solution with inventory management, payment processing, and analytics dashboard.',
-    image: `${baseUrl}projects/project2.webp`,
-    tags: ['Next.js', 'Stripe', 'PostgreSQL', 'Tailwind'],
+      'Sistema de punto de venta orientado a pequeños y medianos negocios, diseñado para centralizar la gestión de productos, inventario, proveedores, compras, ventas, caja y reportes.',
+    image: `${baseUrl}projects/pos_demo.webp`,
+    tags: ['HTML5', 'CSS3', 'JavaScript', 'Python', 'Django', 'PostgreSQL'],
+    link: 'https://pos-demo-license.onrender.com/',
+    github: 'https://github.com/alampf/pos-demo-license.git',
+  },
+  {
+    title: 'Sabix Delivery',
+    description:
+      'Aplicación móvil de delivery que permite a los clientes explorar establecimientos, gestionar pedidos y dar seguimiento al proceso de entrega mediante una experiencia sencilla e intuitiva.',
+    image: `${baseUrl}projects/sabix_delivery.webp`,
+    tags: ['Flutter', 'Dart', 'PostgreSQL', 'FastAPI'],
     link: '#',
     github: '#',
   },
   {
-    title: 'AI Writing Assistant',
+    title: 'HiveBot',
     description:
-      'An intelligent writing tool powered by GPT-4, helping users create better content faster.',
-    image: `${baseUrl}projects/project3.webp`,
-    tags: ['React', 'OpenAI', 'Python', 'FastAPI'],
-    link: '#',
-    github: '#',
-  },
-  {
-    title: 'Project Management Tool',
-    description:
-      'A collaborative workspace for teams with real-time updates, task tracking, and integrations.',
-    image: `${baseUrl}projects/project4.webp`,
-    tags: ['Next.js', 'Socket.io', 'MongoDB', 'Redis'],
+      'Sistema IoT para la automatización y monitoreo de la alimentación de abejas, integrado con una aplicación móvil que permite supervisar comederos y consultar información en tiempo real.',
+    image: `${baseUrl}projects/hivebot.webp`,
+    tags: ['Flutter', 'Dart', 'Firebase', 'HTML5', 'CSS3', 'Python', 'Django'],
     link: '#',
     github: '#',
   },
@@ -53,17 +60,17 @@ export default function Projects() {
         {/* Section Header */}
         <div className='text-center mx-auto max-w-3xl mb-16'>
           <span className='text-secondary-foreground text-sm font-medium tracking-wider uppercase animate-fade-in'>
-            Feature Work
+            Trabajo destacado
           </span>
           <h2 className='text-4xl md:text-5xl font-bold mt-4 animate-fade-in animation-delay-100 text-secondary-foreground'>
-            Projects that{' '}
+            Proyectos que{' '}
             <span className='font-serif italic font-normal text-white'>
-              make an impact.
+              marcan la diferencia.
             </span>
           </h2>
           <p className='text-muted-foreground animate-fade-in animation-delay-200'>
-            A section of my recent work, of complex web applications to innovate
-            tools that solve real-world problems.
+            Una selección de mi trabajo reciente: aplicaciones web complejas y
+            herramientas innovadoras que resuelven problemas reales.
           </p>
         </div>
         {/* Projects Grid */}
@@ -128,7 +135,7 @@ export default function Projects() {
         {/* View All CTA */}
         <div className='text-center mt-12 animate-fade-in animation-delay-500'>
           <AnimatedBorderButton>
-            View All Projects
+            Ver todos los proyectos
             <ArrowUpRight className='w-5 h-5' />
           </AnimatedBorderButton>
         </div>

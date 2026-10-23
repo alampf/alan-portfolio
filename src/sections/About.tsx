@@ -3,26 +3,27 @@ import { FaCode, FaLightbulb, FaRocket, FaUsers } from 'react-icons/fa6';
 const highlights = [
   {
     icon: FaCode,
-    title: 'Clean Code',
+    title: 'Código limpio',
     description:
-      'Writting maintainable, scalable code that stands the test if time.',
+      'Escribo código sostenible y escalable preparado para el futuro.',
   },
   {
     icon: FaRocket,
-    title: 'Performance',
+    title: 'Rendimiento',
     description:
-      'Optimizing for speed and delivering lightning-fast user experiences.',
+      'Optimizar el rendimiento técnico para garantizar experiencias de usuario fluidas e instantáneas.',
   },
   {
     icon: FaUsers,
-    title: 'Collaboration',
-    description: 'Working closely with teams to bring ideas to life.',
+    title: 'Colaboración',
+    description:
+      'Trabajar de manera colaborativa en equipos de desarrollo para transformar conceptos en soluciones reales.',
   },
   {
     icon: FaLightbulb,
-    title: 'Innovation',
+    title: 'Innovación',
     description:
-      'Staying ahead with the latest technologies and best practices.',
+      'Comprometido con el aprendizaje continuo y adopción de últimas tendencias tecnológicas. ',
   },
 ];
 
@@ -35,53 +36,63 @@ export default function About() {
           <div className='space-y-8'>
             <div className='animate-fade-in'>
               <span className='text-secondary-foreground text-sm font-medium tracking-wider uppercase'>
-                About Me
+                Sobre mí
               </span>
             </div>
             <h2 className='text-4xl md:text-5xl font-bold leading-tight animate-fade-in animation-delay-100 text-secondary-foreground'>
-              Building the Furure,{' '}
+              Modelando el futuro digital,{' '}
               <span className='font-serif italic font-normal text-white'>
-                one component at a time.
+                componente a componente.
               </span>
             </h2>
             <div className='space-y-4 text-muted-foreground animate-fade-in animation-delay-200'>
               <p>
-                I'm a passionate software engineer with 1 year of
-                experience crafting digital products that make a difference. My
-                journey started with a curiosity for how things work on the web,
-                and it has evolved into a deep expertise in modern frontend
-                technologies.
+                Soy un desarrollador de software enfocado en la creación de
+                productos digitales que mezclan la innovación y alto
+                rendimiento. Mi trayectoria comenzó por la curiosidad de
+                comprender la arquitectura web, lo que hoy se ha consolidado un
+                dominio sólido de tecnologías frontend modernas y desarrollo
+                multiplataforma.
               </p>
               <p>
-                I specialize in Angular, and TypeScript, building
-                everything from sleek landing pages to complex enterprise
-                applications. My approach combines technical excellence with a
-                keen eye for design and user experience.
+                Durante mi trayectoria como desarrollador he trabajado con
+                Angular y TypeScript, desarrollando interfaces web dinámicas,
+                hasta complejas aplicaciones web institucionales. Mi objetivo
+                actualmente es expandir mi ecosistema de aprendizaje hacia el
+                desarrollo web y móvil, equilibrando la rigurosidad técnica con
+                atención minuciosa a la interfaz de usuario (UI) y experiencia
+                de usuario (UX).
               </p>
               <p>
-                When I'm not coding, you'll find me exploring new technologies,
-                contributing to open-source projects, or sharing knowledge with
-                the developer community.
+                Siempre estoy en constante evolución, me mantengo actualizado al
+                día explorando el nuevo ecosistema tecnológico y sumando valor a
+                la comunidad de desarrolladores locales.
               </p>
             </div>
             <div className='glass rounded-2xl p-6 glow-border animate-fade-in animation-delay-300'>
               <p className='text-lg font-medium italic text-foreground'>
-                "My mission is to create digital experiences that are not just
-                functional, but truly delightful — products that users love to
-                use and developers love to maintain."
+                "Mi misión es crear productos digitales que destaquen por su
+                usabilidad, fiabilidad y rigor técnico: soluciones intuitivas
+                que los usuarios disfruten utilizar y arquitecturas limpias que
+                los equipos de desarrollo puedan escalar con facilidad."
               </p>
             </div>
           </div>
           {/* Right Column Highlights */}
           <div className='grid sm:grid-cols-2 gap-6'>
             {highlights.map((item, idx) => (
-              <div key={idx} className='glass p-6 rounded-2xl animate-fade-in'
-              style={{animationDelay: `${(idx + 1) * 100}ms`}}>
+              <div
+                key={idx}
+                className='glass p-6 rounded-2xl animate-fade-in'
+                style={{ animationDelay: `${(idx + 1) * 100}ms` }}
+              >
                 <div className='w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 hover:bg-primary/20'>
                   <item.icon className='w-6 h-6 text-primary' />
                 </div>
                 <h3 className='text-lg font-semibold mb-2'>{item.title}</h3>
-                <p className='text-sm text-muted-foreground'>{item.description}</p>
+                <p className='text-sm text-muted-foreground'>
+                  {item.description}
+                </p>
               </div>
             ))}
           </div>

@@ -11,10 +11,10 @@ const socialLinks = [
 ];
 
 const footerLinks = [
-  { href: '#about', label: 'About' },
-  { href: '#projects', label: 'Projects' },
-  { href: '#experience', label: 'Experience' },
-  { href: '#contact', label: 'Contact' },
+  { href: '#about', label: 'Sobre mí' },
+  { href: '#projects', label: 'Proyectos' },
+  // { href: '#experience', label: 'Experiencia' },
+  { href: '#contact', label: 'Contacto' },
 ];
 
 export default function Footer() {
@@ -32,7 +32,7 @@ export default function Footer() {
               AP<span className='text-primary'>.</span>
             </a>
             <p className='text-sm text-muted-foreground mt-2'>
-              © {currentYear} Alan Patlani. All rights reserved.
+              © {currentYear} Alan Patlani. Todos los derechos reservados.
             </p>
           </div>
 

@@ -1,38 +1,47 @@
 const experiences = [
   {
-    period: '2022 — Present',
-    role: 'Senior Frontend Engineer',
-    company: 'Tech Innovators Inc.',
+    period: '2025 — Actual',
+    role: 'Ingeniería en Desarrollo y Gestión de Software',
+    company: 'Universidad Tecnológica de Tlaxcala',
     description:
-      'Leading frontend architecture for a suite of fintech products. Implemented micro-frontend architecture, reduced bundle size by 40%, and mentored a team of 5 developers.',
-    technologies: ['React', 'TypeScript', 'Next.js', 'GraphQL'],
+      'Formación enfocada en arquitectura de software, desarrollo web y móvil, gestión de proyectos y aplicación de buenas prácticas de desarrollo.',
+    technologies: ['Angular', 'TypeScript', 'Django', 'Flutter'],
     current: true,
   },
   {
-    period: '2020 — 2022',
-    role: 'Frontend Engineer',
-    company: 'Digital Solutions Co.',
+    period: '2026',
+    role: 'Desarrollador Frontend | SIIUTTLAX',
+    company: 'Universidad Tecnológica de Tlaxcala',
     description:
-      'Built and maintained multiple React applications for enterprise clients. Introduced automated testing practices that improved code coverage to 85%.',
-    technologies: ['React', 'Redux', 'Jest', 'Cypress'],
+      'Participación en el desarrollo de un sistema institucional, trabajando en el frontend con Angular y TypeScript e integrando servicios mediante una API REST desarrollada con Django.',
+    technologies: ['Angular', 'TypeScript', 'Tailwind CSS', 'Django REST', 'Git'],
     current: false,
   },
   {
-    period: '2019 — 2020',
-    role: 'Junior Developer',
-    company: 'StartUp Labs',
+    period: '2026',
+    role: 'Desarrollador Full Stack | POS Demo',
+    company: 'Proyecto personal',
     description:
-      'Contributed to the development of a SaaS platform from MVP to production. Collaborated with designers to implement pixel-perfect UI components.',
-    technologies: ['React', 'Node.js', 'MongoDB', 'AWS'],
+      'Diseño y desarrollo de un sistema de punto de venta para pequeños y medianos negocios, con módulos de inventario, compras, ventas, caja, proveedores y reportes.',
+    technologies: ['Python', 'Django', 'PostgreSQL', 'JavaScript'],
     current: false,
   },
   {
-    period: '2018 — 2019',
-    role: 'Freelance Developer',
-    company: 'Self-Employed',
+    period: '2024 — 2025',
+    role: 'Desarrollador Mobile — HiveBot',
+    company: 'Proyecto académico / Estadías TSU',
     description:
-      'Delivered custom web solutions for small businesses and startups. Built 15+ websites and applications, handling everything from design to deployment.',
-    technologies: ['JavaScript', 'PHP', 'WordPress', 'MySQL'],
+      'Desarrollo de una aplicación móvil multiplataforma integrada con un sistema IoT para el monitoreo y automatización de comederos para abejas.',
+    technologies: ['Flutter', 'Dart', 'Firebase', 'IoT'],
+    current: false,
+  },
+  {
+    period: '2023 — 2025',
+    role: 'TSU en Desarrollo de Software Multiplataforma',
+    company: 'Universidad Tecnológica de Tlaxcala',
+    description:
+      'Formación en desarrollo de aplicaciones web y móviles, programación backend, bases de datos SQL y NoSQL, APIs REST y control de versiones.',
+    technologies: ['Python', 'Django', 'Flutter', 'SQL', 'Git'],
     current: false,
   },
 ];
@@ -45,17 +54,19 @@ export default function Experience() {
         {/* Section Header */}
         <div className='max-w-3xl mb-16'>
           <span className='text-secondary-foreground text-sm font-medium tracking-wider uppercase animate-fade-in'>
-            Carrer Journey
+            Trayectoria profesional
           </span>
           <h2 className='text-4xl md:text-5xl font-bold mt-4 mb-5 animate-fade-in animation-delay-100 text-secondary-foreground'>
-            Experience that{' '}
+            Experiencia que{' '}
             <span className='font-serif italic font-normal text-white'>
-              speaks volumes.
+              habla por sí sola.
             </span>
           </h2>
           <p className='text-muted-foreground animate-fade-in animation-delay-200'>
-            A timeline of my professional growth, from curious beginner to
-            senior engineer leading teams and building products at scale.
+            Una línea de tiempo de mi crecimiento profesional: desde mis
+            primeros proyectos de desarrollo hasta la creación de soluciones
+            web, móviles e IoT, fortaleciendo mis habilidades y preparándome
+            para nuevos retos profesionales.
           </p>
         </div>
         {/* Timeline */}
